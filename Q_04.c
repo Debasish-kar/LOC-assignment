@@ -9,22 +9,26 @@ printf("1.Addition \n");
 printf("2.Subtraction \n"); 
 printf("3.Multiplication \n"); 
 printf("4.Division \n");
+ printf("enter your choice: ");
+ scanf("%d",&op);
+ 
 switch(op)
 {
     case 1:
-printf("sum of %f and %f is: %f",&a,&b,a+b);
+printf("sum of %f and %f is: %f",a,b,a+b);
 break;
 case 2:
-printf("subtraction of %f and %f is: %f",&a,&b,a-b);
+printf("subtraction of %f and %f is: %f",a,b,a-b);
 break;
 case 3:
-printf("multiplication of %f and %f is: %f",&a,&b,a*b);
+printf("multiplication of %f and %f is: %f",a,b,a*b);
 break;
 case 4:
-printf("division of %f and %f is: %f",&a,&b,a/b);
+printf("division of %f and %f is: %f",a,b,a/b);
 break; 
 default:
 printf("choose correctly");
+  break;
 }
 return 0;
 }
